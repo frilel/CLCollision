@@ -7,8 +7,8 @@
     <ProjectGuid>{7645F45F-9B9C-4ABF-9E5C-63F615C1EB0D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CLCollision</RootNamespace>
-    <AssemblyName>CLCollision</AssemblyName>
+    <RootNamespace>clCollision</RootNamespace>
+    <AssemblyName>clCollision</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -21,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -44,10 +45,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Collider.cs" />
+    <Compile Include="CL_Collider.cs" />
     <Compile Include="GJK.cs" />
+    <Compile Include="GJK_Muratori.cs" />
+    <Compile Include="MathUtils.cs" />
     <Compile Include="MeshCollider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SphereCollider.cs" />
     <Compile Include="Vector3.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
